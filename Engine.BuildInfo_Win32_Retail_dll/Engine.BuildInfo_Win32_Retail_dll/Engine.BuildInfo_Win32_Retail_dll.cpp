@@ -14,7 +14,7 @@ LPCSTR mImportNames[] = {"getBuildInfo"};
 BOOL WINAPI DllMain( HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved ) {
 	mHinst = hinstDLL;
 	if ( fdwReason == DLL_PROCESS_ATTACH ) {
-		mHinstDLL = LoadLibrary( "ori_.\Engine.BuildInfo_Win32_Retail_dll.dll" );
+		mHinstDLL = LoadLibrary( "ori_Engine.BuildInfo_Win32_Retail_dll.dll" );
 		if ( !mHinstDLL )
 			return ( FALSE );
 		for ( int i = 0; i < 1; i++ )
