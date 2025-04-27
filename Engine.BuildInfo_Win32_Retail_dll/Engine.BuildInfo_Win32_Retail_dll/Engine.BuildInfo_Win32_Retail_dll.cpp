@@ -37,5 +37,7 @@ void InjectUIScaleLimit(void) {
 	//按键提示检测分辨率的地址
 	WriteProcessMemory(GetCurrentProcess(), (LPVOID)0x0094FC63, (LPVOID)&value, 1, NULL);
 	WriteProcessMemory(GetCurrentProcess(), (LPVOID)0x0094FC8B, (LPVOID)&value, 1, NULL);
-
+	//小地图
+	value = 0x8E;
+	WriteProcessMemory(GetCurrentProcess(), (LPVOID)0x00936733, (LPVOID)&value, 1, NULL);
 }
