@@ -1,5 +1,5 @@
 # bf3_fix
-## Choose another language: [English](README_EN.md)
+### 已被[此项目](https://github.com/Bartis1313/bf3-hudfix)取代  
 
 解决战地3在高分辨率屏幕下的UI缩放问题
 ![4K](preview.png)
